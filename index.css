@@ -34,3 +34,48 @@ body {
     width: 40%;
     box-shadow: 5px 5px 5px 1px rgb(193, 189, 189);
 }
+
+.item {
+    display: flex;
+    justify-content: space-between ;
+    font-size: 30px;
+    color: #225c65;
+    background: linear-gradient(48deg, rgba(246,238,3,1) 8%, rgba(140,241,23,1) 18%, rgba(13,249,245,1) 33%, rgba(232,251,251,1) 72%);
+    height: 60px;
+    width: 43.5%;
+    list-style-type: none;
+    text-align: right;
+    border-bottom: 1px solid #f2f2f4;
+}
+
+.itemCompleted {
+    background: linear-gradient(48deg, rgba(3,246,68,1) 8%, rgba(209,238,175,1) 18%, rgba(10,196,69,1) 33%, rgba(232,251,251,1) 72%);
+    color: #000000;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: line-through;
+    transition: all 2s ease;
+}
+
+#itemsList {
+    display: flex;
+    flex-direction: column;
+    align-items:last baseline;
+}
+
+.done, .delete {
+    border-radius: 50%;
+    padding: 10px;
+    background: none;
+    box-shadow: 5px 5px 5px 1px rgb(193, 189, 189);
+}
+
+.done {
+    border-color: limegreen;
+    margin-left: 5px;
+}
+
+.delete {
+    border-color: crimson;
+    margin-left: 5px;
+}
