@@ -6,7 +6,11 @@ const addNewItem = () => {
     const itemValue = intupField.value
     const itemContainer = document.createElement('li')
     itemContainer.classList.add('item')
-    itemContainer.innerText = itemValue
+
+    const itemText = document.createElement('div')
+    itemText.classList.add('itemText')
+    itemText.innerText = itemValue
+    itemContainer.appendChild(itemText)
 
     const itemButtons = document.createElement('div')
     itemButtons.classList.add('itemBtn')
